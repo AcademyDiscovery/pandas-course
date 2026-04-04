@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  test:
+    uses: AcademyDiscovery/project-hub-tests/.github/workflows/run-tests.yml@main
+    with:
+      repo: ${{ github.repository }}
+      ref: ${{ github.sha }}
