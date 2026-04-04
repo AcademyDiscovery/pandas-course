@@ -1,10 +1,10 @@
- name: Grade PR                                                                                                                                                                                                                   
+name: Grade PR                                                                                                                                                                                                                   
                                                                                                                                                                                                                                  
-  on:
-    pull_request:
-      types: [opened, synchronize, reopened]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
                                                                                                                                                                                                                                    
-  jobs:
-    grade:                                                                                                                                                                                                                         
-      uses: AcademyDiscovery/pandas-grader/.github/workflows/run-tests.yml@main                                                                                                                                                  
-      secrets: inherit       
+jobs:
+  grade:                                                                                                                                                                                                                         
+    uses: AcademyDiscovery/pandas-grader/.github/workflows/run-tests.yml@main                                                                                                                                                  
+    secrets: inherit       
