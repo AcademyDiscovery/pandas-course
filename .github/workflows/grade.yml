@@ -7,4 +7,7 @@ on:
 jobs:
   grade:                                                                                                                                                                                                                         
     uses: AcademyDiscovery/pandas-grader/.github/workflows/run-tests.yml@main                                                                                                                                                  
-    secrets: inherit       
+    secrets: inherit
+    permissions:                                                                                                                                                                                                                 
+        pull-requests: write                                                                                                                                                                                                       
+        issues: write  
